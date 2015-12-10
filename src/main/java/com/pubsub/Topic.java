@@ -1,15 +1,15 @@
 package com.pubsub;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Topic {
 
     private String topic;
     private Map<String, Boolean> subscribers; //map of subscriber < id, isActive>
     private List<Message> messages; //master list of messages for a given topic
+
+
+//    private Status status;
 
     public Topic(String topic) {
         this.topic = topic;
